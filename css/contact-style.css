@@ -1,0 +1,88 @@
+.contact-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.input-container label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #fff;
+    padding: 0 5px;
+    font-weight: bold;
+    color: #000;
+    transition: 0.3s;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-container textarea {
+    resize: none;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border-color: #007bff;
+}
+
+.input-container input:focus + label,
+.input-container textarea:focus + label {
+    color: #007bff;
+}
+
+.button {
+    background: linear-gradient(45deg, #ff0, #ff8000);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #ff8000, #ff0);
+}
+
+/* Loading Spinner Style */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
