@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng3 - Soluções em Engenharia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/button-style.css">
+    <link rel="stylesheet" href="css/contact-style.css">
+    <link rel="stylesheet" href="css/loading-style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo da Empresa" class="logo">
+            </div>
+            <ul>
+                <li><a href="#home" class="menu-button">Home</a></li>
+                <li><a href="#sobre" class="menu-button">Sobre</a></li>
+                <li><a href="#produtos" class="menu-button">Produtos</a></li>
+                <li><a href="#servicos" class="menu-button">Serviços</a></li>
+                <li><a href="#contato" class="menu-button">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <video autoplay muted loop id="background-video">
+            <source src="videos/Eng3 - Energia Solar e Soluções em Engenharia (Institucional).mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Bem-vindo à Nossa Empresa de Energia Solar</h1>
+            <p>Soluções Sustentáveis para um Futuro Melhor</p>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container sobre-container">
+            <div class="carrossel">
+                <div class="carrossel-imagens">
+                    <img src="img/faixada-eng3.jpg" alt="Foto 1" class="animate-img">
+                    <img src="img/recepcao-eng3.jpg" alt="Foto 2" class="animate-img">
+                    <img src="img/colabs-eng3.jpg" alt="Foto 3" class="animate-img">
+                </div>
+                <button class="carrossel-btn prev">&lt;</button>
+                <button class="carrossel-btn next">&gt;</button>
+            </div>
+            <div class="sobre-texto">
+                <h2>Sobre Nós</h2>
+                <p>Nós somos líderes em soluções de energia solar, oferecendo produtos de alta qualidade e serviços personalizados. Nosso compromisso é com a sustentabilidade e a inovação, garantindo um futuro mais verde para todos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <p>Descubra nossos produtos de alta qualidade</p>
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/produto1.jpg" alt="Produto 1">
+                    <h3>Produto 1</h3>
+                    <p>Descrição do Produto 1</p>
+                </div>
+                <div class="card">
+                    <img src="img/produto2.jpg" alt="Produto 2">
+                    <h3>Produto 2</h3>
+                    <p>Descrição do Produto 2</p>
+                </div>
+                <div class="card">
+                    <img src="img/produto3.jpg" alt="Produto 3">
+                    <h3>Produto 3</h3>
+                    <p>Descrição do Produto 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <p>Serviços personalizados para atender suas necessidades</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-card" id="contact-card">
+                <form id="contact-form">
+                    <div class="input-container">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+                <div class="loader" id="loading-spinner" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Empresa de Energia Solar. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
